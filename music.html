@@ -19,35 +19,31 @@
   </head>
   <body>
     <header>
-      <button
-        class="btn"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample"
-      >
-        <i class="fa-solid fa-bars fa-2xl" class="hamburger"></i>
-      </button>
-
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-        <div class="offcanvas-header">
-          <a href="index.html" class="btn btn-primary" role="button">Home</a>
-          <a href="about.html" class="btn btn-primary" role="button">About</a>
-          <a href="music.html" class="btn btn-primary disabled" role="button" aria-disabled="true">Music</a>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" id="menuCheckbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li>
+              <a href="index.html">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label><i class="fas fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">About</label><i class="fas fa-user"></i>
+              </a>
+            </li>
+            <li>
+              <a href="music.html">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Music</label><i class="fas fa-music"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        </div>
-      </div>
+      </nav>
       <h1>Valley Vibes</h1>
       <p>Here you can find all of our music and future releases.</p>
     </header>

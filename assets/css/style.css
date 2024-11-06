@@ -27,7 +27,7 @@ header p {
 {
   display: block;
   /* You can also use relative/absolute here if you want to stay on the top */
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 50px;
 
@@ -47,7 +47,7 @@ header p {
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #264653;
 }
 
 
@@ -136,7 +136,7 @@ header p {
 #menu
 {
   position: absolute;
-  max-width: 400px;
+  max-width: 200px;
   width: 100vw;
   max-height: 100vh;
   margin: -100px 0 0 -50px;
@@ -147,7 +147,7 @@ header p {
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
+  border-bottom-right-radius: 10px;
 
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -163,6 +163,7 @@ header p {
 
 #menu li label
 {
+  padding-right: 10px;
   cursor: pointer;
 }
 
