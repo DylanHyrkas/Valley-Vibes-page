@@ -4,9 +4,10 @@ body {
 }
 
 header {
-  padding: 80px;
+  padding: 30px;
   background: #264653;
   color: white;
+  /*max-height: 10vh;*/
 }
 
 header h1 {
@@ -21,12 +22,15 @@ header p {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow: auto;
+}
+
 /* Menu code starts here */
 
 #menuToggle
 {
   display: block;
-  /* You can also use relative/absolute here if you want to stay on the top */
   position: absolute;
   top: 50px;
   left: 50px;

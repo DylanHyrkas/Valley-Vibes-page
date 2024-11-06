@@ -28,17 +28,23 @@
           <ul id="menu">
             <li>
               <a href="index.html">
-                <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label><i class="fas fa-home"></i>
+                <label for="menuCheckbox" onclick="this.parentNode.click();"
+                  >Home</label
+                ><i class="fas fa-home"></i>
               </a>
             </li>
             <li>
               <a href="about.html">
-                <label for="menuCheckbox" onclick="this.parentNode.click();">About</label><i class="fas fa-user"></i>
+                <label for="menuCheckbox" onclick="this.parentNode.click();"
+                  >About</label
+                ><i class="fas fa-user"></i>
               </a>
             </li>
             <li>
               <a href="music.html">
-                <label for="menuCheckbox" onclick="this.parentNode.click();">Music</label><i class="fas fa-music"></i>
+                <label for="menuCheckbox" onclick="this.parentNode.click();"
+                  >Music</label
+                ><i class="fas fa-music"></i>
               </a>
             </li>
           </ul>
@@ -48,29 +54,34 @@
       <p>Here you can find all of our music and future releases.</p>
     </header>
     <main>
-      <div class="audio-container" id="audio-container">
-        <div class="audio-info">
-          <h4 id="title">boulevard of broken dreams</h4>
-          <div class="progress-container" id="progress-container">
-            <div class="progress" id="progress"></div>
+      <div class="musicPlayerContainer">
+        <div class="audio-container" id="audio-container">
+          <div class="audio-info">
+            <h4 id="title">boulevard of broken dreams</h4>
+            <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+            </div>
           </div>
-        </div>
 
-        <audio src="./Boulevard-of-Broken-Dreams_(bush-version).flac" id="audio"></audio>
+          <audio
+            src="./Boulevard-of-Broken-Dreams_(bush-version).flac"
+            id="audio"
+          ></audio>
 
-        <div class="img-container">
-          <img src="./Valleyvibes.jpg" alt="audio-cover" id="cover" />
-        </div>
-        <div class="navigation">
-          <button id="prev" class="action-btn">
-            <i class="fas fa-backward"></i>
-          </button>
-          <button id="play" class="action-btn action-btn-big">
-            <i class="fas fa-play"></i>
-          </button>
-          <button id="next" class="action-btn">
-            <i class="fas fa-forward"></i>
-          </button>
+          <div class="img-container">
+            <img src="assets/images/Valleyvibes.jpg" alt="audio-cover" id="cover" />
+          </div>
+          <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
         </div>
       </div>
     </main>

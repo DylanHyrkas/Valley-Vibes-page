@@ -10,7 +10,7 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // audio files
-const files = ['boulevard'];
+const files = ['Boulevard-of-Broken-Dreams_(bush-version)'];
 
 // Keep track of file
 let fileIndex = 0;
@@ -20,8 +20,8 @@ let fileIndex = 0;
  * @param {string} file name of the audio file to update details of
  */
 function loadFile(file){
-  audio.src = `./music/${file}.flac`;
-  cover.src = `./images/${file}.jpg`;
+  audio.src = `assets/music/${file}.flac`;
+  cover.src = `assets/images/${file}.jpg`;
   title.innerText = file;
 }
 

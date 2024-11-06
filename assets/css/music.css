@@ -1,25 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-/*
-body {
-  background-image: linear-gradient(
-    0deg,
-    rgba(247, 247, 247, 1) 23.8%,
-    rgba(255, 212, 212, 1) 92%
-  );
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-}
-*/
 .audio-container {
+  max-width: 50vw;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
@@ -33,20 +15,6 @@ body {
 .img-container {
   position: relative;
   width: 110px;
-}
-
-/* Puts an empty circle in the middle of the
-image to make it seem like a record */
-.img-container::after {
-  content: '';
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  transform: translate(-50%, 50%);
 }
 
 .img-container img {
