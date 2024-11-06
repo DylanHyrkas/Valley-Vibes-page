@@ -11,16 +11,48 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <style></style>
+    <script
+      src="https://kit.fontawesome.com/03dad612bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <button
+        class="btn"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        <i class="fa-solid fa-bars fa-2xl" class="hamburger"></i>
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="index.html" class="btn btn-primary" role="button">Home</a>
+          <a href="about.html" class="btn btn-primary disabled" role="button" aria-disabled="true">About</a>
+          <a href="music.html" class="btn btn-primary" role="button">Music</a>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        </div>
+      </div>
       <h1>Valley Vibes</h1>
       <p>Here you can find all of our music and future releases.</p>
     </header>
     <main>
       <audio controls>
-        <source src="Boulevard-of-Broken-Dreams_(bush-version).flac" type="audio/flac">
+        <source src="./assets/music/Boulevard-of-Broken-Dreams_(bush-version).flac" type="audio/flac">
       Your browser does not support the audio element.
       </audio>
     </main>
