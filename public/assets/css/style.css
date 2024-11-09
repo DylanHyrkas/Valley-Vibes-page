@@ -143,6 +143,7 @@ main {
   max-width: 250px;
   width: 100vw;
   max-height: 100vh;
+  height: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
